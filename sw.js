@@ -1,4 +1,4 @@
-var CACHE_NAME = 'gashapon-v7';
+var CACHE_NAME = 'gashapon-v8';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(

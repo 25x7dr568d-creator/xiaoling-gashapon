@@ -795,13 +795,13 @@ if ("serviceWorker" in navigator) {
   ];
 
   function getPlaces() {
-    var saved = localStorage.getItem('weekend-places-v4');
+    var saved = localStorage.getItem('weekend-places-v5');
     if (saved) return JSON.parse(saved);
-    localStorage.setItem('weekend-places-v4', JSON.stringify(DEFAULT_PLACES));
+    localStorage.setItem('weekend-places-v5', JSON.stringify(DEFAULT_PLACES));
     return DEFAULT_PLACES.slice();
   }
   function savePlaces(places) {
-    localStorage.setItem('weekend-places-v4', JSON.stringify(places));
+    localStorage.setItem('weekend-places-v5', JSON.stringify(places));
   }
 
   function weightedRandom(places) {
