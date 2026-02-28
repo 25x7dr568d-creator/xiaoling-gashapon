@@ -760,7 +760,6 @@ if ("serviceWorker" in navigator) {
 
   const DEFAULT_PLACES = [
     // 公園
-    { name: '安邦公園 🌳', weight: 1 },
     { name: '4號公園 🌳', weight: 1 },
     { name: '桃園公園 🌳', weight: 1 },
     { name: '風禾公園 🛝', weight: 1 },
@@ -795,13 +794,13 @@ if ("serviceWorker" in navigator) {
   ];
 
   function getPlaces() {
-    var saved = localStorage.getItem('weekend-places-v5');
+    var saved = localStorage.getItem('weekend-places-v6');
     if (saved) return JSON.parse(saved);
-    localStorage.setItem('weekend-places-v5', JSON.stringify(DEFAULT_PLACES));
+    localStorage.setItem('weekend-places-v6', JSON.stringify(DEFAULT_PLACES));
     return DEFAULT_PLACES.slice();
   }
   function savePlaces(places) {
-    localStorage.setItem('weekend-places-v5', JSON.stringify(places));
+    localStorage.setItem('weekend-places-v6', JSON.stringify(places));
   }
 
   function weightedRandom(places) {
